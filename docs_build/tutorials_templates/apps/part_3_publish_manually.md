@@ -1,11 +1,19 @@
-
-Installing a dpk into a project:
+# Part 3: Publish the App to the Platform 
 
 In order to install an application to your project, you must use the python SDK or the CLI, whichever you prefer.
 
- 
+But first, we need to publish the app to the platform:
 
-Through the CLI - running the command `dlp app install –dpk-id <DPK_ID> –project-name <PROJECT_NAME>`
+```shell
+dpl app publish --project-name <PROJECT_NAME>
+```
+
+Now we can install the app in any project
+
+CLI
+```shell
+dlp app install --project-name <PROJECT_NAME>
+```
 
 Through the SDK - run the following commands
 

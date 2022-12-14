@@ -33,9 +33,9 @@ The directory structure will contain the 'dataloop.json' app file as well as thi
 │ └── model.pth  
 ├── dataloop.json  
 ├── README.md  
-└── .gitignore  
+└── .gitignore
 
-## The 'dataloop.json' Structure
+### The Dataloop Package (DPK)
 
 The DPK (dataloop package) is the main entity holding an application.
 A DPK holds all the required components of the application, the panels it has, the services it uses, and the source code
@@ -43,7 +43,7 @@ of the application.
 A DPK is represented by the `dataloop.json` file at the root of the project, which specifies the required components of
 the application.
 
-### DPK File Example
+## The JSON Structure
 
 ```json
 {
@@ -96,7 +96,7 @@ dataset browser.
 
 Item Side Panel - Add a new side panel to the Annotation and Info panels in the item viewer.
 
-### Toolbar - (TODO: fill)
+A sample panel json:
 
 ```json
 {
@@ -138,10 +138,12 @@ Item Side Panel - Add a new side panel to the Annotation and Info panels in the 
 }
 ```
 
+### Toolbar
+
 ### Modules
 
 The modules are the modules that are required by the application to work properly. They are the Faas module, for more
-information, please refer to the documentation (TODO: add link)
+information, please refer to the documentation FaaS documentation.
 
 ### Services
 
@@ -158,10 +160,6 @@ otherwise)
 ### Models
 
 ### Artifacts
-
-## Explore Template
-
-...
 
 
 
