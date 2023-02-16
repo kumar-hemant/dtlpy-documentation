@@ -97,7 +97,7 @@ The `dl` object would now be globally available through the window object, i.e.,
 
 [Read more about installing the SDK](https://dtlpy-documentation.redoc.ly/resources/dtljs/xframe/) 
 
-5. After creating your application, you should create a react build and move it to the `/var/www/html` folder for the Apache server to access it. 
+5. After creating your application, you should create a react build and move it to the `/var/www/html/image-viewer` folder for the Apache server to access it. 
 
 ### Create a host:
 
@@ -119,8 +119,9 @@ sudo vi /etc/hosts/sites-available/000-default.conf
 
 2. Make changes to the file:
 
-    DocumentRoot /var/www/html ====> DocumentRoot /var/www/image-viewer
-
+    ```
+    DocumentRoot /var/www/html ====> DocumentRoot /var/www/html/image-viewer
+    ```
 
 3. We need to serve this application on HTTPS too, so use OPENSSL to create a SSL certificate on your local machine.
 
@@ -148,7 +149,7 @@ mv key.pem /etc/ssl/private/key.pem
 
     - To the DocumentRoot folder
         ```
-        DocumentRoot /var/www/html ====> DocumentRoot /var/www/image-viewer
+        DocumentRoot /var/www/html ====> DocumentRoot /var/www/html/image-viewer
         ```
 
 7. Enable this site.
