@@ -37,7 +37,7 @@ As a part of this tutorial, we will be creating and testing a react based "Image
 <details>
     <summary>App.js</summary>
     
-`
+```
 import './App.css';
 import { useEffect, useState } from 'react';
 
@@ -83,7 +83,7 @@ function App() {
 }
 
 export default App;
-`
+```
 
 </details>
 
