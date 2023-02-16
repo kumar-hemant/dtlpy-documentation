@@ -179,7 +179,7 @@ You will need two files: `dataloop.json` and `app.json`. These files define meta
 Sample dataloop.json and app.json files are provided here:
 
 The base route of your application should serve these files.
-eg: if your base route is: pipeline-2x.dataloop.ai then the dataloop.json file should be available at GET `https://local.dataloop.ai/dataloop.json` location.
+eg: if your base route is: `local.dataloop.ai` then the dataloop.json file should be available at GET `https://local.dataloop.ai/dataloop.json` location.
 
 Currently, there is no validation about the JSON file, it doesn’t affect the operation of the application.
 
